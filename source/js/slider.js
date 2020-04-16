@@ -14,8 +14,9 @@ window.addEventListener('load', () => {
 			nextEl: '.firstSlider .container .firstSlider__wrapperSwiper .firstSlider__sliderButtons .firstSlider__btn_right',
 		},
 		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
+			el: '.swiper-pagination_first',
+			type: 'bullets'
+			// modifierClass: 'swiper-pagination-mod'
 		}
 	})
 
@@ -89,7 +90,7 @@ window.addEventListener('load', () => {
 	// slider 2-----------------------------
 
 
-	new Swiper('.phoneSlider .container .phoneSlider__wrapperSwiper .phoneSlider__swiper-container', {
+	const phoneSlider = new Swiper('.phoneSlider .container .phoneSlider__wrapperSwiper .phoneSlider__swiper-container', {
 		loop: true,
 		slidesPerView: 1,
 		navigation: {
@@ -97,8 +98,8 @@ window.addEventListener('load', () => {
 			nextEl: '.phoneSlider .container .phoneSlider__wrapperSwiper .phoneSlider__sliderButtons .phoneSlider__btn_right',
 		},
 		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
+			el: '.swiper-pagination_phone',
+			type: 'bullets'
 		}
 	})
 })
